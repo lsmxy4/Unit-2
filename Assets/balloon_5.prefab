@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3312021428533058914}
   - component: {fileID: 7674587842929626258}
   - component: {fileID: -3958475016464591317}
+  - component: {fileID: 749704224451159003}
   m_Layer: 0
   m_Name: balloon_5
   m_TagString: Untagged
@@ -105,6 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdf1ad2a3773fab4c9596028c88392bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  speed: 2
+  destroyY: 10
+  particleEffectPrefab: {fileID: 5705980960151837848, guid: 44f58a54cd46ed44abb6d412f7df23ad, type: 3}
 --- !u!50 &-3958475016464591317
 Rigidbody2D:
   serializedVersion: 5
@@ -132,3 +136,39 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &749704224451159003
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7665439708439329574}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.74
